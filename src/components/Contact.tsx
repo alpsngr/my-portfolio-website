@@ -1,27 +1,32 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import About from "./components/About";
-import Home from "./components/Home";
-import Projects from "./components/Projects";
-import Contact from "./components/Contact";
-import "./App.css";
+import "./Contact.css";
 
-const App: React.FC = () => {
+const Contact: React.FC = () => {
   return (
-    <Router>
-      <div className="App">
-        <Navbar />
-        <div className="gradient"></div>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-        <div className="gradient"></div>
-        <footer>
-          <h2>Alper Sungur &middot; Web Developer</h2>
+    <div className="contact-container">
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <p>
+          If you have any questions or want to get in touch, feel free to reach
+          out via email or LinkedIn. Alternatively, you can fill out the contact
+          form below.
+        </p>
+        <form action="https://formspree.io/f/mldrejqb" method="POST">
+          <label>
+            Your Name:
+            <input type="text" name="name" required />
+          </label>
+          <label>
+            Your Email:
+            <input type="email" name="_replyto" required />
+          </label>
+          <label>
+            Your Message:
+            <textarea name="message" required></textarea>
+          </label>
+          <button type="submit">Send</button>
+        </form>
+        <div className="social-links">
           <ul>
             <li>
               <a
@@ -48,7 +53,7 @@ const App: React.FC = () => {
             </li>
             <li>
               <a
-                href="mailto:alpersungur@tudamuhendislik.com.tr"
+                href="mailto:alpersungur@tudamuhendislik.com"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -60,10 +65,10 @@ const App: React.FC = () => {
               </a>
             </li>
           </ul>
-        </footer>
-      </div>
-    </Router>
+        </div>
+      </section>
+    </div>
   );
 };
 
-export default App;
+export default Contact;

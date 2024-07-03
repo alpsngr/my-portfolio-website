@@ -1,5 +1,6 @@
 import React from "react";
-import "./Navbar.css";
+import { Link } from "react-router-dom";
+import "./navbar.css";
 
 const Navbar: React.FC = () => {
   return (
@@ -7,56 +8,51 @@ const Navbar: React.FC = () => {
       <ul>
         <li>
           <h1>
-            <a href="/">
-              <span className="fa-solid fa-code" aria-hidden="true"></span>
-              <span> Alper Sungur </span>
-            </a>
+            <Link to="/">
+              <span className="fa-solid fa-code" aria-hidden="true"></span>{" "}
+              <span>Alper Sungur</span>
+            </Link>
           </h1>
         </li>
         <li>
-          {" "}
-          <a href="#projects"> Projects </a>{" "}
+          <Link to="/projects">Projects</Link>
         </li>
         <li>
-          {" "}
-          <a href="#about"> About </a>{" "}
+          <Link to="/about">About</Link>
         </li>
         <li>
-          {" "}
-          <a href="#contact"> Contact </a>{" "}
+          <Link to="/contact">Contact</Link>
         </li>
         <li>
-          {" "}
           <a
             href="https://www.linkedin.com/in/alper-sungur-62601a55/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <span className="fa-brands fa-linkedin" aria-hidden="true"></span>
-            <span className="sr-only"> Linkedin </span>
+            <span className="fa-brands fa-linkedin" aria-hidden="true"></span>{" "}
+            <span className="sr-only">Linkedin</span>
           </a>
         </li>
         <li>
-          {" "}
           <a
             href="https://github.com/alpsngr"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <span className="fa-brands fa-github" aria-hidden="true"></span>
-            <span className="sr-only"> Github </span>
+            <span className="fa-brands fa-github" aria-hidden="true"></span>{" "}
+            <span className="sr-only">Github</span>
           </a>
         </li>
-        <li>
+        <li className="hidden">
           {" "}
+          {/* Resume link is hidden */}
           <a
             href="https://github.com/alpsngr"
             target="_blank"
             rel="noopener noreferrer"
             className="button"
           >
-            {" "}
-            Resume{" "}
+            Resume
           </a>
         </li>
       </ul>

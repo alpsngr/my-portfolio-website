@@ -1,0 +1,67 @@
+.contact-container {
+  background-color: var(--dkblue);
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+#contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--aqua);
+}
+
+#contact p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+label {
+  margin-bottom: 1rem;
+  width: 100%;
+  text-align: left;
+  color: var(--white);
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border: none;
+  border-radius: 5px;
+}
+
+button {
+  background-color: var(--magenta);
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--hotmag);
+}
+
+.social-links ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 2rem 0 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.social-links li {
+  font-size: 1.5rem;
+}

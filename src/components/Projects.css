@@ -1,0 +1,25 @@
+.projects-container {
+  padding: 4rem 1rem;
+  background-color: var(--dkblue);
+  text-align: center;
+}
+
+.loading {
+  font-size: 2rem;
+  color: var(--aqua);
+}
+.project-details {
+  padding: 1rem;
+  background-color: var(--dkblue);
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+.project-details h3 {
+  color: var(--aqua);
+}
+
+.project-details p {
+  color: var(--white);
+  line-height: 1.5;
+}
