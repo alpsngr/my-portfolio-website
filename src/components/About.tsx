@@ -19,8 +19,8 @@ const About: React.FC = () => {
                 <br />
                 Outside of work, I enjoy engaging in various activities. I have
                 played professional basketball for many years and still continue
-                to play in amateur leagues. Additionally, I enjoy traveling,
-                playing computer games, staying fit, and swimming.
+                to play in amateur league. Additionally, I enjoy traveling,
+                playing computer games, fitness, and swimming.
               </p>
             </p>
             <h4>My favourite technologies include:</h4>
