@@ -61,3 +61,8 @@ nav [class*="fa-"]:hover {
 .hidden {
   display: none;
 }
+@media (max-width: 400px) {
+  nav .top-nav {
+    font-size: 0.65rem;
+  }
+}

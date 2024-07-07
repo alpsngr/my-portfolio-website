@@ -12,16 +12,18 @@ const App: React.FC = () => {
     <Router>
       <div className="App">
         <Navbar />
-        <div className="gradient"></div>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-        <div className="gradient"></div>
-        <footer>
-          <h2>Alper Sungur &middot; Web Developer</h2>
+        <div className="main-container">
+          <div className="gradient"></div>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+          <div className="gradient"></div>
+        </div>
+        <footer className="bottom-footer">
+          <h2 id="alp">Alper Sungur &middot; Web Developer</h2>
           <ul>
             <li>
               <a

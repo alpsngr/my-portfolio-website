@@ -1,9 +1,16 @@
 .contact-container {
   background-color: var(--dkblue);
   padding: 4rem 1rem;
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 100vw;
 }
-
+#contact {
+  background-color: var(--dkblue);
+}
 #contact h2 {
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
@@ -17,6 +24,7 @@
 }
 
 form {
+  background-color: var(--dkblue);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -43,10 +51,11 @@ textarea {
 button {
   background-color: var(--magenta);
   color: white;
-  padding: 0.5rem 1rem;
+  padding: 0.8rem 1.5rem;
   border: none;
-  border-radius: 5px;
+  border-radius: 15px;
   cursor: pointer;
+  font-size: 20px;
 }
 
 button:hover {
@@ -63,5 +72,5 @@ button:hover {
 }
 
 .social-links li {
-  font-size: 1.5rem;
+  font-size: 3rem;
 }

@@ -14,16 +14,16 @@ const Navbar: React.FC = () => {
             </Link>
           </h1>
         </li>
-        <li>
+        <li className="top-nav">
           <Link to="/projects">Projects</Link>
         </li>
-        <li>
+        <li className="top-nav">
           <Link to="/about">About</Link>
         </li>
-        <li>
+        <li className="top-nav">
           <Link to="/contact">Contact</Link>
         </li>
-        <li>
+        <li className="top-nav">
           <a
             href="https://www.linkedin.com/in/alper-sungur-62601a55/"
             target="_blank"
@@ -33,7 +33,7 @@ const Navbar: React.FC = () => {
             <span className="sr-only">Linkedin</span>
           </a>
         </li>
-        <li>
+        <li className="top-nav">
           <a
             href="https://github.com/alpsngr"
             target="_blank"
