@@ -30,7 +30,7 @@ const About: React.FC = () => {
               <li>JavaScript</li>
               <li>TypeScript</li>
               <li>React</li>
-              <li>Node.js</li>
+              <li>Next.js</li>
             </ul>
           </div>
           <img src="/img/alp.png" className="about-image" alt="That's me." />

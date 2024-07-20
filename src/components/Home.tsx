@@ -9,7 +9,7 @@ const Home: React.FC = () => {
         </p>
         <h2>Web Developer</h2>
         <p className="highlight">
-          Html/CSS/JavaScript/TypeScript/React/Node.js
+          Html/CSS/JavaScript/TypeScript/React/Next.js
         </p>
         <p className="description">
           I specialize in creating modern and user-friendly web applications
